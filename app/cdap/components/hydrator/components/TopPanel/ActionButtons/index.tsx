@@ -133,7 +133,7 @@ export const ActionButtons = ({
     }
   };
 
-  const configureButtonAnchorEl = previewMode
+  const configureButtonAnchorSelector = previewMode
     ? 'preview-config-btn'
     : 'pipeline-configure-modeless-btn';
 
@@ -359,7 +359,7 @@ export const ActionButtons = ({
         isDeployed={isDeployed}
         showPreviewConfig={showPreviewConfig}
         getPostActions={getPostActions}
-        anchorEl={configureButtonAnchorEl}
+        anchorEl={configureButtonAnchorSelector}
         validatePluginProperties={validatePluginProperties}
         getRuntimeArgs={getRuntimeArgs}
       ></PipelineConfigure>
